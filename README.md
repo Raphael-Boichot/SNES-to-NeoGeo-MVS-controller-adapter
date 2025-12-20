@@ -16,5 +16,3 @@ A SNES to NeoGeo MVS controller adapter based on Arduino. To be used with a Supe
 ## To do
 - build and test the device
 - optimize the Arduino code as I have no idea if its current version induces a lag or not.
-
-To date, the design must still be validated but you can still try it at your own (weak) risk.
