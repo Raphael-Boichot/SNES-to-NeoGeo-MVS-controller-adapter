@@ -1,5 +1,5 @@
 # SNES to NeoGeo MVS controller adapter
-A SNES to NeoGeo MVS controller adapter based on Arduino. To be used with a Supergun, not AES compatible. The code and pinout come from [this repository](https://github.com/robinhedwards/SNES-to-NeoGeo) from Robin Edwards, must works as it, but to be optimized. The adapter is not natively AES compatible (the AES DB15 male port is too deep to be used with standard DB15 female connectors).
+A SNES to NeoGeo MVS controller adapter based on Arduino. To be used with a Supergun, not AES compatible. The code and pinout come from [this repository](https://github.com/robinhedwards/SNES-to-NeoGeo) from Robin Edwards, must works as it, but to be optimized. The adapter is not natively AES compatible - which includes NeoGeo and NeoGeo CD - the AES DB15 male port is indeed too deep to be used with standard DB15 female connectors.
 
 ## Schematic (to be validated)
 ![](/PCB/Schematic.png)
