@@ -3,6 +3,8 @@ A SNES to NeoGeo MVS controller adapter based on Arduino. To be used with a Supe
 
 While currently untested, there is no reason it would not work as it.
 
+PCB designs can be edited with [EasyEDA Standard Edition](https://easyeda.com). Eu citizens are advised to order PCBs at [JLCPCB](https://jlcpcb.com/) to avoid additional prohibitive taxes with customs (taxes paid at order). Just drop the gerber to their site and order with default parameters (the cheapest by default).
+
 ## Schematic (to be validated)
 ![](/PCB/Schematic.png)
 
@@ -10,7 +12,7 @@ While currently untested, there is no reason it would not work as it.
 ![](/PCB/PCB.png)
 
 ## Required parts
-- [Project PCB](/PCB/) ordered at [JLCPCB](https://jlcpcb.com/). Just drop the Gerber .zip files on their site and order with default options.
+- [Project PCB](/PCB/) ordered at [JLCPCB](https://jlcpcb.com/). Just drop the Gerber .zip files on their site and order with default options (any thickness, any color).
 - [90° SNES controller port](https://aliexpress.com/item/32828768824.html)
 - [90° female DB15 port](https://aliexpress.com/item/1005005998429505.html). As I said, the male socket of AES systems is too deep to fit with regular female DB15 port and I do not find a reference for compatible AES connectors, if any exists.
 - [Arduino Nano, any USB type](https://aliexpress.com/item/1005007475356474.html).
