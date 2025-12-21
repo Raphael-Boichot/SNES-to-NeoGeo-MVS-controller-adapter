@@ -15,7 +15,6 @@
 ### Arduino → DB15 (Front View)
 
 1 | o o o o o o o o | 8
- 
 9 \ o o o o o o o / 15
 
 
