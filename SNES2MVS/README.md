@@ -3,11 +3,11 @@
   | 1 2 3 4 | 5 6 7 |
   -----------------/
   
-  Pin 1: +5V
-  Pin 2: Clock -> Arduino A0
-  Pin 3: Latch -> Arduino A1
-  Pin 4: Serial -> Arduino A2
-  Pin 7: GND
+- Pin 1: +5V
+- Pin 2: Clock -> Arduino A0
+- Pin 3: Latch -> Arduino A1
+- Pin 4: Serial -> Arduino A2
+- Pin 7: GND
 
 ## Arduino -> DB15
 
@@ -20,15 +20,15 @@
 
  DB15 Pin  ->  Arduino
  --------      -------
- 1 (GND)       GND
- 8 (+5V)       +5V
- 3 (Sel)       D2
- 11 (Start)    D3
- 15 (Up)       D4
- 7 (Down)      D5
- 14 (Left)     D6
- 6 (Right)     D7
- 13 (A)        D8
- 5 (B)         D9
- 12 (C)        D10
- 4 (D)         D11
+- 1 (GND)       GND
+- 8 (+5V)       +5V
+- 3 (Sel)       D2
+- 11 (Start)    D3
+- 15 (Up)       D4
+- 7 (Down)      D5
+- 14 (Left)     D6
+- 6 (Right)     D7
+- 13 (A)        D8
+- 5 (B)         D9
+- 12 (C)        D10
+- 4 (D)         D11
