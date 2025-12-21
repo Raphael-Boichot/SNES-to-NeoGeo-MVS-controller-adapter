@@ -16,9 +16,9 @@
 
 1(GND)                8(+5V)
 
- o o o o o o o o
+| o o o o o o o o |
  
-   o o o o o o o
+ \ o o o o o o o /
   
 9                     15
 
