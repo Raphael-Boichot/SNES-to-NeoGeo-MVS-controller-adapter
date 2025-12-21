@@ -5,6 +5,9 @@ While currently untested, there is no reason it would not work as it.
 
 PCB designs can be edited with [EasyEDA Standard Edition](https://easyeda.com). Eu citizens are advised to order PCBs at [JLCPCB](https://jlcpcb.com/) to avoid additional prohibitive taxes with customs (taxes paid at order). Just drop the gerber to their site and order with default parameters (the cheapest by default).
 
+## Why ?
+The genuine NeoGeo controllers are horrendously expensive while the SNES controllers are among the best and most common controller still available. Plus the NeoGeo controllers are surpringly prone to issues with their microswitches and quite difficult to tear down and reassemble. So if you don't fear missing the clicky sound whick is part of the NeoGeo experience, go for this adapter.
+
 ## Schematic (to be validated)
 ![](/PCB/Schematic.png)
 
@@ -18,5 +21,5 @@ PCB designs can be edited with [EasyEDA Standard Edition](https://easyeda.com). 
 - [Arduino Nano, any USB type](https://aliexpress.com/item/1005007475356474.html).
 
 ## To do
-- build and confirm that the pinout from the source repository is OK and the PCB working
+- build and confirm that the pinout from the source repository is OK and the PCB working.
 - optimize the Arduino code as I have no idea if its current version induces a lag or not. I guess using a lookup table would fasten the code.
