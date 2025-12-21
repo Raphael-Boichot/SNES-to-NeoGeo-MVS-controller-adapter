@@ -14,13 +14,10 @@
 
 ### Arduino → DB15 (Front View)
 
-1(GND)                8(+5V)
-
-| o o o o o o o o |
+1 | o o o o o o o o | 8
  
- \ o o o o o o o /
-  
-9                     15
+9 \ o o o o o o o / 15
+
 
 | DB15 | Signal | Arduino |
 |----:|--------|---------|
