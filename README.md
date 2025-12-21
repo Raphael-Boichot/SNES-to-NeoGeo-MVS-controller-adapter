@@ -21,5 +21,5 @@ Using genuine NeoGeo controllers with a supergun + MVS board stays the best arca
 - [Arduino Nano, any USB type](https://aliexpress.com/item/1005007475356474.html).
 
 ## To do
-- build and confirm that the pinout from the source repository is OK and the PCB working.
-- optimize the Arduino code as I have no idea if its current version induces a lag or not. I guess using a lookup table would fasten the code.
+- build and confirm that the pinout from the source repository is OK and the overall design working with a supergun powered in 5.5V.
+- optimize the Arduino code as I have no idea if the current version induces a lag or not. I guess using a lookup table would fasten the code.
