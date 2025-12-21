@@ -26,3 +26,4 @@ Using genuine NeoGeo controllers with a supergun + MVS board stays the best arca
 
 ## Useful sources
 - [SNES / Super Famicom Joystick Data format](https://gamesx.com/controldata/snesdat.htm)
+- [Super Nintendo controller - how it works](https://learn.adafruit.com/super-nintendo-usb-controller/how-it-works)
