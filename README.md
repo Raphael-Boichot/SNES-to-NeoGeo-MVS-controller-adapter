@@ -30,4 +30,4 @@ Using genuine NeoGeo controllers with a supergun + MVS board stays the best arca
 - [Most reliable schematic of a supergun ever found on the internet](http://gc339.free.fr/SuperGun/SG.html)
 ![supergun wiring](/Supergun_wiring.jpg)
 
-And yes we European had direct RGB sockets on our televisions via a SCART socket (Syndicat des Constructeurs d'Appareils Radiorécepteurs et Téléviseurs). Sadly this format is now obsolete but any tube television in Europe has it natively.
+And yes we European had mandatory direct RGB pins on our televisions via a SCART socket (Syndicat des Constructeurs d'Appareils Radiorécepteurs et Téléviseurs). Composite and RF signals were just science fiction for US. Sadly this format is now obsolete but any tube television built in Europe between 1979 and 2016 has it natively.
