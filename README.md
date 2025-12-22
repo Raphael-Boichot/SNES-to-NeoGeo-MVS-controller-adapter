@@ -27,5 +27,7 @@ Using genuine NeoGeo controllers with a supergun + MVS board stays the best arca
 ## Useful sources
 - [SNES / Super Famicom Joystick Data format](https://gamesx.com/controldata/snesdat.htm)
 - [Super Nintendo controller - how it works](https://learn.adafruit.com/super-nintendo-usb-controller/how-it-works)
-- [Most reliable schematic of a supergun ever found on the internet](http://gc339.free.fr/SuperGun/SG.html):
+- [Most reliable schematic of a supergun ever found on the internet](http://gc339.free.fr/SuperGun/SG.html)
 ![supergun wiring](/Supergun_wiring.jpg)
+
+And yes we European had direct RGB sockets on our televisions via a SCART socket (Syndicat des Constructeurs d'Appareils Radiorécepteurs et Téléviseurs). Sadly this format is now obsolete but any tube television in Europe has it natively.
