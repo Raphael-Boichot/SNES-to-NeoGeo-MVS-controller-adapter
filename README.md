@@ -27,6 +27,5 @@ Using genuine NeoGeo controllers with a supergun + MVS board stays the best arca
 ## Useful sources
 - [SNES / Super Famicom Joystick Data format](https://gamesx.com/controldata/snesdat.htm)
 - [Super Nintendo controller - how it works](https://learn.adafruit.com/super-nintendo-usb-controller/how-it-works)
-- [Most reliable schematic of a supergun ever found](https://darius-saturn.com/forum/viewtopic.php?t=2288)
-
+- Most reliable schematic of a supergun ever found o the internet:
 ![supergun wiring](/Supergun_wiring.jpg)
