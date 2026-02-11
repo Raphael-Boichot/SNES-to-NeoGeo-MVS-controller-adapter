@@ -20,10 +20,6 @@ Using genuine NeoGeo controllers with a supergun + MVS board stays the best arca
 - [90° female DB15 port](https://aliexpress.com/item/1005005998429505.html). As I said, the male socket of AES systems is too deep to fit with regular female DB15 port and I do not find a reference for compatible AES connectors, if any exists.
 - [Arduino Nano, any USB type](https://aliexpress.com/item/1005007475356474.html).
 
-## To do
-- build and confirm that the pinout from the source repository is OK and the overall design working with a supergun powered in 5.5V.
-- optimize the Arduino code as I have no idea if the current version induces a lag or not. I guess using a lookup table would fasten the code.
-
 ## Useful sources
 - [A similar project because I like to redo what other did](https://github.com/NEO-JAMMA/Neo-Geo_MVS_Projects/tree/main/ControllerAdapter)
 - [SNES / Super Famicom Joystick Data format](https://gamesx.com/controldata/snesdat.htm)
