@@ -8,10 +8,10 @@ PCB designs can be edited with [EasyEDA Standard Edition](https://easyeda.com). 
 ## Why ?
 Using genuine NeoGeo controllers with a supergun + MVS board stays the best arcade experience. But these controllers are horrendously expensive while the SNES controllers are among the best and most common controller still available. Plus the NeoGeo controllers are surpringly prone to issues with their microswitches and quite difficult to tear down and reassemble. So if you don't fear missing the clicky sound which is part of the NeoGeo experience, go for this SNES adapter.
 
-## Schematic (to be validated)
+## Schematic
 ![](/PCB/Schematic.png)
 
-## PCB (to be validated)
+## PCB
 ![](/PCB/PCB.png)
 
 ## Required parts
