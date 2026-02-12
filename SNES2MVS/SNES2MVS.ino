@@ -45,7 +45,7 @@ constexpr uint8_t PIN_LED = LED_BUILTIN;
 // SNES -> MVS bitmask table
 // SNES order: B, Y, Sel, Start, U, D, L, R, A, X, L, R
 constexpr uint16_t snesToMVS[12] = {
-  (1 << MVS_B),      // B
+  (1 << MVS_A),      // B
   (1 << MVS_C),      // Y -> C
   (1 << MVS_SELECT), // Select
   (1 << MVS_START),  // Start
@@ -53,7 +53,7 @@ constexpr uint16_t snesToMVS[12] = {
   (1 << MVS_DOWN),   // Down
   (1 << MVS_LEFT),   // Left
   (1 << MVS_RIGHT),  // Right
-  (1 << MVS_A),      // A
+  (1 << MVS_B),      // A
   (1 << MVS_D),      // X -> D
   0,                 // L (Handled via Turbo logic)
   0                  // R (Handled via Turbo logic)
