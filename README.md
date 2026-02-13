@@ -1,9 +1,9 @@
 # SNES to NeoGeo MVS controller adapter
-A SNES to NeoGeo MVS controller adapter based on Arduino. To be used with a supergun or MVS consolization. The code and pinout come from [this repository](https://github.com/robinhedwards/SNES-to-NeoGeo) from Robin Edwards, so it must works as it, but code needs optimization. The adapter is **not natively AES compatible** (the "not" so includes NeoGeo AES and NeoGeo CD) because the AES DB15 male port is indeed too deep to be used with standard DB15 female connectors.
+A SNES to NeoGeo MVS controller adapter based on Arduino. To be used with a supergun or MVS consolization. The pinout come from [this repository](https://github.com/robinhedwards/SNES-to-NeoGeo) from Robin Edwards. The adapter is **not natively AES compatible** (the "not" so includes NeoGeo AES and NeoGeo CD) because the AES DB15 male port is indeed too deep to be used with standard DB15 female connectors.
 
 PCB designs can be edited with [EasyEDA Standard Edition](https://easyeda.com). Eu citizens are advised to order PCBs at [JLCPCB](https://jlcpcb.com/) to avoid additional prohibitive taxes with customs (taxes paid at order). Just drop the gerber to their site and order with default parameters (the cheapest by default).
 
-Button layout is based on a NeoGeo CD controller, but is very easy to modify in the code.
+Button layout is based on a NeoGeo CD controller because I'm used to it, but is very easy to modify in the code.
 
 ## Why ?
 Using genuine NeoGeo controllers with a supergun + MVS board stays the best arcade experience. But these controllers are horrendously expensive while the SNES controllers are among the best and most common controller still available. Plus the NeoGeo controllers are surpringly prone to issues with their microswitches and quite difficult to tear down and reassemble. So if you don't fear missing the clicky sound which is part of the NeoGeo experience, go for this SNES adapter.
