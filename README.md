@@ -3,7 +3,7 @@ A SNES to NeoGeo MVS controller adapter based on Arduino. To be used with a supe
 
 PCB designs can be edited with [EasyEDA Standard Edition](https://easyeda.com). Eu citizens are advised to order PCBs at [JLCPCB](https://jlcpcb.com/) to avoid additional prohibitive taxes with customs (taxes paid at order). Just drop the gerber to their site and order with default parameters (the cheapest by default).
 
-Button layout is based on a NeoGeo CD controller because I'm used to it, but is very easy to modify in the code.
+Button layout is based on a NeoGeo CD controller because I'm used to it, but is very easy to modify in the code. It was Metal Slug proofed with success.
 
 ## Why ?
 Using genuine NeoGeo controllers with a supergun + MVS board stays the best arcade experience. But these controllers are horrendously expensive while the SNES controllers are among the best and most common controller still available. Plus the NeoGeo controllers are surpringly prone to issues with their microswitches and quite difficult to tear down and reassemble. So if you don't fear missing the clicky sound which is part of the NeoGeo experience, go for this SNES adapter.
