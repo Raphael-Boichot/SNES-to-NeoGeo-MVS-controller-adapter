@@ -14,6 +14,9 @@ Using genuine NeoGeo controllers with a supergun + MVS board stays the best arca
 ## PCB
 ![](/PCB/PCB.png)
 
+## Buttons layout
+![](/Button_layout.png)
+
 ## Required parts
 - [Project PCB](/PCB/) ordered at [JLCPCB](https://jlcpcb.com/). Just drop the Gerber .zip files on their site and order with default options (any thickness, any color).
 - [90° SNES controller port](https://aliexpress.com/item/32828768824.html)
