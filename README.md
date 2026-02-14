@@ -39,4 +39,6 @@ Based on the NeoGeo CD controller plus autofires placed where I find them the mo
 - [Most reliable schematic of a supergun ever found on the internet](http://gc339.free.fr/SuperGun/SG.html)
 ![supergun wiring](/Supergun_wiring.jpg)
 
+It's basically the SmallCab deluxe supergun schematic apart from some minor things.
+
 And yes we European had mandatory direct RGB inputs on our televisions via a SCART socket (Syndicat des Constructeurs d'Appareils Radiorécepteurs et Téléviseurs). Composite and RF signals were just bad science fiction for us. Sadly this format is now obsolete but any TV built in Europe between 1979 and 2016 has it natively.
