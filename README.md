@@ -6,10 +6,14 @@ PCB designs can be edited with [EasyEDA Standard Edition](https://easyeda.com). 
 Button layout is based on a NeoGeo CD controller because I'm used to it, but is very easy to modify in the code. It was Metal Slug proofed with success.
 
 ## Why ?
-Using genuine NeoGeo controllers with a supergun + MVS board stays the best arcade experience. But these controllers are horrendously expensive while the SNES controllers are among the best (if not THE best) and most common controllers still available. Plus the NeoGeo controllers are surpringly prone to issues with their microswitches and quite difficult to tear down and reassemble. So if you don't fear missing the clicky sound which is part of the NeoGeo experience, go for this SNES adapter.
+Using genuine NeoGeo controllers with a supergun + MVS board stays the best "genuine" experience out of owning a cabinet. But these controllers are horrendously expensive now. 
+
+The reasonable option with a supergun is to go with the NeoGeo CD controllers, a less bit on the pricey side, still doing the job well.
+
+But I must be honest, I always found the NeoGeo CD controllers rather average (mushy push buttons with annoying "plok" sound) and imprecise (the microswitches are cool but joystick is too soft, it's easy to miss a given direction) contrary to the SNES controller which is 100% accurate in any push. So the converter.
 
 ## Is there a lag ?
-Yes of course, about 1/4 to 1/3 of a frame. Joke apart: no.
+Yes of course, about 1/4 to 1/3 of a 60 Hz frame. Joke apart: none because code is faster than the NeoGeo I/O controller circuit.
 
 ## Schematic
 ![](/PCB/Schematic.png)
