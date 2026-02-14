@@ -24,6 +24,8 @@ Yes of course, about 1/4 to 1/3 of a 60 Hz frame. Joke apart: none because code 
 ## Buttons layout
 ![](/Button_layout.png)
 
+Based on the NeoGeo CD controller plus autofires placed where I find them the more accurate when playing.
+
 ## Required parts
 - [Project PCB](/PCB/) ordered at [JLCPCB](https://jlcpcb.com/). Just drop the Gerber .zip files on their site and order with default options (any thickness, any color).
 - [90° SNES controller port](https://aliexpress.com/item/32828768824.html)
