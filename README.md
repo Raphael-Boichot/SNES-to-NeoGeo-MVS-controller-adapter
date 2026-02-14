@@ -8,6 +8,9 @@ Button layout is based on a NeoGeo CD controller because I'm used to it, but is 
 ## Why ?
 Using genuine NeoGeo controllers with a supergun + MVS board stays the best arcade experience. But these controllers are horrendously expensive while the SNES controllers are among the best (if not THE best) and most common controllers still available. Plus the NeoGeo controllers are surpringly prone to issues with their microswitches and quite difficult to tear down and reassemble. So if you don't fear missing the clicky sound which is part of the NeoGeo experience, go for this SNES adapter.
 
+## Is there a lag ?
+Yes of course, about 1/4 to 1/3 of a frame. Joke apart: no.
+
 ## Schematic
 ![](/PCB/Schematic.png)
 
