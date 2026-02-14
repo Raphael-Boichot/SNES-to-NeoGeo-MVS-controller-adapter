@@ -21,6 +21,8 @@ Yes of course, about 1/4 to 1/3 of a 60 Hz frame. Joke apart: none because code 
 ## PCB
 ![](/PCB/PCB.png)
 
+All components go on the same side. The Arduino is programmed to flash when an input is dectected because it's cool.
+
 ## Buttons layout
 ![](/Button_layout.png)
 
