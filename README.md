@@ -35,7 +35,7 @@ Based on the NeoGeo CD controller plus autofires placed where I find them the mo
 - [Arduino Nano, any USB type](https://aliexpress.com/item/1005007475356474.html).
 
 ## Useful sources
-- [A similar project because I like to redo what other did](https://github.com/NEO-JAMMA/Neo-Geo_MVS_Projects/tree/main/ControllerAdapter)
+- [A similar project because I like to redo what other did](https://github.com/NEO-JAMMA/Neo-Geo_MVS_Projects/tree/main/ControllerAdapter). Honestly my PCB is cooler.
 - [SNES / Super Famicom Joystick Data format](https://gamesx.com/controldata/snesdat.htm)
 - [Super Nintendo controller - how it works](https://learn.adafruit.com/super-nintendo-usb-controller/how-it-works)
 - [Most reliable schematic of a supergun ever found on the internet](http://gc339.free.fr/SuperGun/SG.html)
