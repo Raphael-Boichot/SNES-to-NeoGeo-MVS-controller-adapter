@@ -8,12 +8,12 @@ Button layout is based on a NeoGeo CD controller because I'm used to it, but is 
 ## Why ?
 Using genuine NeoGeo controllers with a supergun + MVS board stays the best "genuine" experience out of owning a cabinet. But these controllers are horrendously expensive now. 
 
-The reasonable option with a supergun is to go with the NeoGeo CD controllers, a less bit on the pricey side, still doing the job well.
+The reasonable option with a supergun is to go with the NeoGeo CD controllers, a less bit on the pricey side, still doing the job according to NeoGeo players.
 
-But I must be honest, I always found the NeoGeo CD controllers rather average (mushy push buttons with annoying "plok" sound) and imprecise (the microswitches are cool but joystick is too soft, it's easy to miss a given direction) contrary to the SNES controller which is 100% accurate in any push. So the converter.
+But I must be honest, I always found the NeoGeo CD controllers quite average (mushy push buttons with annoying "plok" sound) and imprecise (the microswitches are cool but joystick is too soft, it's easy to miss a given direction) contrary to the SNES controller which is 100% accurate in any push. So the converter.
 
 ## Is there a lag ?
-Yes of course, about 1/4 to 1/3 of a 60 Hz frame. Joke apart: none because code is faster than the NeoGeo I/O controller circuit.
+Yes of course, about 1/4 to 1/3 of a 60 Hz frame. Joke apart: none because code is faster than the NeoGeo I/O controller circuit ans much faster than your brain.
 
 ## Schematic
 ![](/PCB/Schematic.png)
