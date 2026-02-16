@@ -11,7 +11,7 @@ Using genuine NeoGeo controllers with a supergun + MVS board stays the best "gen
 But I must be honest, I always found the NeoGeo CD controller quite average, with its mushy buttons and imprecise joystick. On the contrary the SNES controller is 100% accurate in any abusive situation and very affordable. So the converter.
 
 ## Is there a lag ?
-Yes of course, about 1/4 to 1/3 of a 60 Hz frame. Joke apart: none because code is faster than the NeoGeo I/O controller circuit and much faster than your brain.
+Yes of course, about 1/4 to 1/3 of a 60 Hz frame. Joke apart: none because code is faster than the NeoGeo I/O controller circuit and much faster than your brain, even not drunk.
 
 ## Schematic
 ![](/PCB/Schematic.png)
