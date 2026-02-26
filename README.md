@@ -32,7 +32,7 @@ Based on the NeoGeo CD controller plus autofires placed where I find them the mo
 - [90° female DB15 port](https://aliexpress.com/item/1005005998429505.html). As I said, the male socket of AES systems is too deep to fit with regular female DB15 port and I do not find a reference for compatible AES connectors, if any exists.
 - [Arduino Nano, any USB type](https://aliexpress.com/item/1005007475356474.html).
 
-## Useful sources
+## Useful resources
 - [A similar project because I like to redo what other did](https://github.com/NEO-JAMMA/Neo-Geo_MVS_Projects/tree/main/ControllerAdapter). Honestly my PCB is cooler.
 - [SNES / Super Famicom Joystick Data format](https://gamesx.com/controldata/snesdat.htm)
 - [Super Nintendo controller - how it works](https://learn.adafruit.com/super-nintendo-usb-controller/how-it-works)
