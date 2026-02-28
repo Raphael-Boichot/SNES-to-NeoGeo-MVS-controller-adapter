@@ -79,6 +79,14 @@ void setup() {
   }
   
   pinMode(PIN_LED, OUTPUT);
+
+  // Rapidly flash LED for 2 seconds at startup
+  for (int i = 0; i < 20; i++) {
+    digitalWrite(PIN_LED, HIGH);
+    delay(50);
+    digitalWrite(PIN_LED, LOW);
+    delay(50);
+  }
 }
 
 // Read raw 16-bit data from SNES controller
