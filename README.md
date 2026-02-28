@@ -1,5 +1,5 @@
 # Yet another SNES to NeoGeo MVS adapter
-A SNES to NeoGeo MVS controller adapter based on Arduino. To be used with a supergun or MVS consolization. The pinout come from [this repository](https://github.com/robinhedwards/SNES-to-NeoGeo) from Robin Edwards. The adapter is **not natively AES compatible** (the "not" so includes NeoGeo AES and NeoGeo CD) because the AES DB15 male port is indeed too deep to be used with standard DB15 female connectors. You can of course replace the DB15 by some third-party butchered extension cord if you want the AES compatibility.
+A SNES to NeoGeo MVS controller adapter based on Arduino. To be used with a supergun or MVS consolization. The pinout come from [this repository](https://github.com/robinhedwards/SNES-to-NeoGeo) from Robin Edwards. The adapter is **not natively AES compatible** (the "not" so includes NeoGeo AES and NeoGeo CD) because the AES DB15 male port is indeed too deep to be used with standard DB15 female connectors. You can of course replace the DB15 by some third-party butchered extension cord if you want the AES compatibility. SNES, super Nintendo and Super Famicom controllers work with the converter.
 
 PCB designs can be edited with [EasyEDA Standard Edition](https://easyeda.com). Eu citizens are advised to order PCBs at [JLCPCB](https://jlcpcb.com/) to avoid additional prohibitive taxes with customs (taxes paid at order). Just drop the gerber to their site and order with default parameters (the cheapest by default). Each adapter unit should cost you about 7€ of 2026 (PCB, components and shipping included).
 
@@ -9,7 +9,7 @@ Button layout is based on a NeoGeo CD controller because I'm used to it, but is 
 Using genuine NeoGeo controllers with a supergun + MVS board stays the best "genuine" experience out of owning a cabinet. But these controllers are horrendously expensive now. The next reasonable option with a supergun is to go with the NeoGeo CD controllers, which is a less bit on the pricey side. But if you're real cheap and like tinkering, the SNES controller perfectly does the job of beating some ass in KOF97. So this converter.
 
 ## Is there a lag ?
-Yes of course, about 1/4 to 1/3 of a 60 Hz frame. Joke apart: none because code is faster than the NeoGeo I/O controller circuit and much faster than your brain, even not drunk.
+No because the code is faster than the NeoGeo I/O controller circuit and much faster than your brain, even not drunk.
 
 ## Schematic
 ![](/PCB/Schematic.png)
