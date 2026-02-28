@@ -21,9 +21,9 @@ No because the code is faster than the NeoGeo I/O controller circuit and much fa
 
 ## Some warning before assembly
 
-Before any attempt to solder anything, **TRY THE ARDUINO NANO FIRST**. You must be able to flash it with the [Arduino IDE](https://support.arduino.cc/hc/en-us/articles/360019833020-Download-and-install-Arduino-IDE) out of the bag and it must blink fast for two seconds with the converter installed. On average, 50% of my AliExpress Arduino hauls go directly to the garbage bin (I mean the recycling bin...) because they are just defective, i.e. equipped with a baroque bootloader at best (if any), a fake chip at worst, and are anyway impossible to reflash without a Ph.D. in Aliexpress oddities. Testing before soldering saves you a nervous breakdown and prevents wasting a PCB, a DB15 port, a SNES port and your fucking time because desoldering plastic parts with hot air is just a wasted effort. 
+Before any attempt to solder anything, **TRY THE ARDUINO NANO FIRST**. You must be able to flash it with the [Arduino IDE](https://support.arduino.cc/hc/en-us/articles/360019833020-Download-and-install-Arduino-IDE) out of the bag and it must blink fast for two seconds with the converter installed. On average, 50% of my AliExpress Arduino hauls go directly to the garbage bin (I mean the recycling bin...) because they are just defective, i.e. equipped with a baroque bootloader at best (if any), a fake chip at worst, and are anyway impossible to reflash without a Ph.D. in Aliexpress oddities. Testing before soldering saves you a nervous breakdown and prevents wasting a PCB, a DB15 port, a SNES port and your fucking patience because desoldering plastic parts with hot air is just a wasted effort. 
 
-Once assembled, you can power it via USB and test a SNES controller directly, it will flash when an input is entered. If the device makes magic smoke once powered by the supergun, this means that DB15 port was soldered upside down.
+Once assembled, you can power it via USB and test a SNES controller directly, it will blink when a controller input is detected. If the device makes magic smoke once powered by the supergun, this means that DB15 port was soldered on the wrong side of the PCB.
 
 ## Buttons layout
 ![](/Button_layout.png)
