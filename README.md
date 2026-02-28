@@ -29,7 +29,7 @@ Based on the NeoGeo CD controller plus autofires placed where I find them the mo
 ## Required parts
 - [Project PCB](/PCB/) ordered at [JLCPCB](https://jlcpcb.com/). Just drop the Gerber .zip files on their site and order with default options (any thickness, any color).
 - [90° SNES controller port](https://aliexpress.com/item/32828768824.html)
-- [90° female DB15 port](https://aliexpress.com/item/1005005998429505.html). As I said, the male socket of AES systems is too deep to fit with regular female DB15 port and I do not find a reference for compatible AES connectors, if any exists.
+- [90° female DB15 port, regular footprint](https://aliexpress.com/item/1005005998429505.html). As I said, the male socket of AES systems is too deep to fit with regular female DB15 port and I do not find a reference for compatible AES connectors, if any exists.
 - [Arduino Nano, any USB type](https://aliexpress.com/item/1005007475356474.html).
 
 ## Useful resources
