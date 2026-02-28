@@ -19,7 +19,13 @@ Yes of course, about 1/4 to 1/3 of a 60 Hz frame. Joke apart: none because code 
 ## PCB
 ![](/PCB/PCB.png)
 
-All components go on the same side. The Arduino is programmed to flash the onboard led when an input is dectected because it's cool.
+**All components go on the same side.** The Arduino is programmed to flash the onboard led when an input is dectected because it's cool.
+
+## Some warning before assembly
+
+Before any attempt to solder anything, **TRY THE ARDUINO FIRST**. You must be able to flash it with the [Arduino IDE](https://support.arduino.cc/hc/en-us/articles/360019833020-Download-and-install-Arduino-IDE) out of the bag and it must flash fast for two seconds with the converter installed. On average, 50% of my AliExpress Arduino hauls go directly to the scrap heap (err, I mean recycling) before they are just defective. Testing before soldering saves you a nervous breakdown and prevents wasting a PCB, a DB15 port, and a SNES port as they are basically impossible to remove with hot air without melting the plastic parts. 
+
+Once assembled, you can power it via USB and test a SNES controller directly, it will flash when an input is entered. If the device makes magic smoke once powered by the supergun, this means that DB15 port was soldered upside down.
 
 ## Buttons layout
 ![](/Button_layout.png)
@@ -30,7 +36,7 @@ Based on the NeoGeo CD controller plus autofires placed where I find them the mo
 - [Project PCB](/PCB/) ordered at [JLCPCB](https://jlcpcb.com/). Just drop the Gerber .zip files on their site and order with default options (any thickness, any color).
 - [90° SNES controller port](https://aliexpress.com/item/32828768824.html)
 - [90° female DB15 port, regular footprint](https://aliexpress.com/item/1005005998429505.html). As I said, the male socket of AES systems is too deep to fit with regular female DB15 port and I do not find a reference for compatible AES connectors, if any exists.
-- [Arduino Nano, any USB type](https://aliexpress.com/item/1005007475356474.html).
+- [Arduino Nano, any USB type](https://fr.aliexpress.com/item/1005006438510487.html). This seller seems to sell working arduinos...
 
 ## Useful resources
 - [A similar project because I like to redo what other did](https://github.com/NEO-JAMMA/Neo-Geo_MVS_Projects/tree/main/ControllerAdapter). Honestly my PCB is cooler.
