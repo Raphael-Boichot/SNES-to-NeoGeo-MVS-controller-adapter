@@ -17,7 +17,7 @@ No because the code is faster than the NeoGeo I/O controller circuit and much fa
 ## PCB
 ![](/PCB/PCB.png)
 
-**All components go on the same side.** The Arduino is programmed to flash the onboard led when an input is dectected because it's cool.
+**All components go on the same side.** The Arduino is programmed to blink the onboard led when an input is dectected because it's cool (and allows testing before connecting to the supergun).
 
 ## Some warning before assembly
 
