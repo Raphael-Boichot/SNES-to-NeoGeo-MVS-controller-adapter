@@ -6,9 +6,7 @@ PCB designs can be edited with [EasyEDA Standard Edition](https://easyeda.com). 
 Button layout is based on a NeoGeo CD controller because I'm used to it, but is very easy to modify in the code. It was Metal Slug proofed with success.
 
 ## Why ?
-Using genuine NeoGeo controllers with a supergun + MVS board stays the best "genuine" experience out of owning a cabinet. But these controllers are horrendously expensive now. The next reasonable option with a supergun is to go with the NeoGeo CD controllers, which is a less bit on the pricey side.
-
-But I must be honest, I always found the NeoGeo CD controller not that good and the SNES controller perfectly does the job of beating some ass in KOF97. So this converter.
+Using genuine NeoGeo controllers with a supergun + MVS board stays the best "genuine" experience out of owning a cabinet. But these controllers are horrendously expensive now. The next reasonable option with a supergun is to go with the NeoGeo CD controllers, which is a less bit on the pricey side. But if you're real cheap and like tinkering, the SNES controller perfectly does the job of beating some ass in KOF97. So this converter.
 
 ## Is there a lag ?
 Yes of course, about 1/4 to 1/3 of a 60 Hz frame. Joke apart: none because code is faster than the NeoGeo I/O controller circuit and much faster than your brain, even not drunk.
