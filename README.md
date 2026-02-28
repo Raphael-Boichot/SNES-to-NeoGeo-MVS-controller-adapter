@@ -6,7 +6,7 @@ PCB designs can be edited with [EasyEDA Standard Edition](https://easyeda.com). 
 Button layout is based on a NeoGeo CD controller because I'm used to it, but is very easy to modify in the code. It was Metal Slug proofed with success.
 
 ## Why ?
-Using genuine NeoGeo controllers with a supergun + MVS board stays the best "genuine" experience out of owning a cabinet. But these controllers are horrendously expensive now. The next reasonable option with a supergun is to go with the NeoGeo CD controllers, which is a less bit on the pricey side. But if you're real cheap and like tinkering, the SNES controller perfectly does the job of beating some ass in KOF97. So this converter.
+Using genuine NeoGeo controllers with a supergun + MVS board stays the best "genuine" experience out of owning a cabinet. But these controllers are horrendously expensive now. The next reasonable option with a supergun is to go with the NeoGeo CD controllers, which is a less bit on the pricey side. But if you're real cheap and like tinkering, the SNES controller perfectly does the job of kicking some ass in KOF97. So this converter.
 
 ## Is there a lag ?
 No because the code is faster than the NeoGeo I/O controller circuit and much faster than your brain, even not drunk.
@@ -19,7 +19,7 @@ No because the code is faster than the NeoGeo I/O controller circuit and much fa
 
 **All components go on the same side.** The Arduino is programmed to blink the onboard led when an input is dectected because it's cool (and allows testing before connecting to the supergun).
 
-## Some warning before assembly
+## Some warning before assembly to avoid a deceptive experience
 
 Before any attempt to solder anything, **TRY THE ARDUINO NANO FIRST**. You must be able to flash it with the [Arduino IDE](https://support.arduino.cc/hc/en-us/articles/360019833020-Download-and-install-Arduino-IDE) out of the bag and it must blink fast for two seconds with the converter installed. On average, 50% of my AliExpress Arduino hauls go directly to the garbage bin (I mean the recycling bin...) because they are just defective, i.e. equipped with a baroque bootloader at best (if any), a fake chip at worst, and are anyway impossible to reflash without a Ph.D. in Aliexpress oddities. Testing before soldering saves you a nervous breakdown and prevents wasting a PCB, a DB15 port, a SNES port and your fucking patience because desoldering plastic parts with hot air is just a wasted effort. 
 
