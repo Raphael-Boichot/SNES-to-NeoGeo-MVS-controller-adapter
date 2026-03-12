@@ -32,13 +32,12 @@ Once assembled, you can power it via USB and test a SNES controller directly, it
 - [90° SNES controller port](https://aliexpress.com/item/32828768824.html). They are normally bent always the same way but just in case look at the seller pictures.
 - [90° female DB15 port, regular footprint](https://aliexpress.com/item/1005005998429505.html). As I said, the male socket of AES systems is too deep to fit with regular female DB15 port and I do not find a reference for compatible AES connectors, if any exists.
 - [Arduino Nano, any USB type](https://fr.aliexpress.com/item/1005006438510487.html). This seller seems to sell working arduinos...
+- If you want to be able to remove / change the Arduino Nano, mount it on some optional [male/female pin headers](https://fr.aliexpress.com/item/4000873858801.html).
 
-## Input layout
+## Controller input layout (easy to change)
 ![](/Button_layout.png)
 
-Based on the NeoGeo CD controller plus autofires placed where I find them the more accurate when playing.
-
-## Now let's kick some asses
+## Now let's kick some samurai asses
 ![](/SNES_to_MVS_in_action.jpg)
 
 ## Useful resources
