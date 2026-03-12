@@ -5,6 +5,8 @@ PCB designs can be edited with [EasyEDA Standard Edition](https://easyeda.com). 
 
 Button layout is based on a NeoGeo CD controller because I'm used to it, but is very easy to modify in the code. It was Metal Slug proofed with success.
 
+![](/SNES_to_MVS_in_hand.jpg)
+
 ## Why ?
 Using genuine NeoGeo controllers with a supergun + MVS board stays the best "genuine" experience out of owning a cabinet. But these controllers are horrendously expensive now. The next reasonable option with a supergun is to go with the NeoGeo CD controllers, which is a less bit on the pricey side. But if you're real cheap and like tinkering, the SNES controller perfectly does the job of kicking some ass in KOF97. So this converter.
 
@@ -25,8 +27,8 @@ Before any attempt to solder anything, **TRY THE ARDUINO NANO FIRST**. You must 
 
 Once assembled, you can power it via USB and test a SNES controller directly, it will blink when a controller input is detected. If the device makes magic smoke once powered by the supergun, this means that DB15 port was soldered on the wrong side of the PCB.
 
-## Buttons layout
-![](/Button_layout.png)
+## Kicking some asses
+![](/SNES_to_MVS_in_action.jpg)
 
 Based on the NeoGeo CD controller plus autofires placed where I find them the more accurate when playing.
 
@@ -35,6 +37,9 @@ Based on the NeoGeo CD controller plus autofires placed where I find them the mo
 - [90° SNES controller port](https://aliexpress.com/item/32828768824.html). They are normally bent always the same way but just in case look at the seller pictures.
 - [90° female DB15 port, regular footprint](https://aliexpress.com/item/1005005998429505.html). As I said, the male socket of AES systems is too deep to fit with regular female DB15 port and I do not find a reference for compatible AES connectors, if any exists.
 - [Arduino Nano, any USB type](https://fr.aliexpress.com/item/1005006438510487.html). This seller seems to sell working arduinos...
+
+## Required parts
+![](/SNES_to_MVS_in_hand.jpg)
 
 ## Useful resources
 - [A similar project because I like to redo what other did](https://github.com/NEO-JAMMA/Neo-Geo_MVS_Projects/tree/main/ControllerAdapter). Honestly my PCB is cooler.
