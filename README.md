@@ -27,19 +27,19 @@ Before any attempt to solder anything, **TRY THE ARDUINO NANO FIRST**. You must 
 
 Once assembled, you can power it via USB and test a SNES controller directly, it will blink when a controller input is detected. If the device makes magic smoke once powered by the supergun, this means that DB15 port was soldered on the wrong side of the PCB.
 
-## Kicking some asses
-![](/SNES_to_MVS_in_action.jpg)
-
-Based on the NeoGeo CD controller plus autofires placed where I find them the more accurate when playing.
-
 ## Required parts
 - [Project PCB](/PCB/) ordered at [JLCPCB](https://jlcpcb.com/). Just drop the Gerber .zip files on their site and order with default options (any thickness, any color).
 - [90° SNES controller port](https://aliexpress.com/item/32828768824.html). They are normally bent always the same way but just in case look at the seller pictures.
 - [90° female DB15 port, regular footprint](https://aliexpress.com/item/1005005998429505.html). As I said, the male socket of AES systems is too deep to fit with regular female DB15 port and I do not find a reference for compatible AES connectors, if any exists.
 - [Arduino Nano, any USB type](https://fr.aliexpress.com/item/1005006438510487.html). This seller seems to sell working arduinos...
 
-## Required parts
-![](/SNES_to_MVS_in_hand.jpg)
+## Input layout
+![](/Button_layout.png)
+
+Based on the NeoGeo CD controller plus autofires placed where I find them the more accurate when playing.
+
+## Now let's kick some asses
+![](/SNES_to_MVS_in_action.jpg)
 
 ## Useful resources
 - [A similar project because I like to redo what other did](https://github.com/NEO-JAMMA/Neo-Geo_MVS_Projects/tree/main/ControllerAdapter). Honestly my PCB is cooler.
