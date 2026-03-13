@@ -40,6 +40,8 @@ Once assembled, you can power it via USB and test a SNES controller directly, it
 ## Now let's kick some samurai asses
 ![](/SNES_to_MVS_in_action.jpg)
 
+(I know, my setup is cool)
+
 ## Useful resources
 - [A similar project because I like to redo what other did](https://github.com/NEO-JAMMA/Neo-Geo_MVS_Projects/tree/main/ControllerAdapter). Honestly my PCB is cooler.
 - [SNES / Super Famicom Joystick Data format](https://gamesx.com/controldata/snesdat.htm)
