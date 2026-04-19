@@ -1,6 +1,7 @@
 /*
   SNES Controller -> Neo-Geo MVS Adapter by Raphaël BOICHOT (...ahem, Google Gemini in fact)
   Features: 
+  - Optimized Pin Switching: Prevents signal jitter for UniBIOS menus when using Pick'n Mix with the 161 in 1
   - L/R Shoulder Buttons = Rapid Fire (Turbo)
   - Built-in LED flashes on any button press/turbo pulse
   - SNES Button Order: B, Y, Select, Start, Up, Down, Left, Right, A, X, L, R
@@ -14,8 +15,8 @@
 */
 
 // SNES interface pins
-constexpr uint8_t DATA_CLOCK  = A0;
-constexpr uint8_t DATA_LATCH  = A1;
+constexpr uint8_t DATA_CLOCK = A0;
+constexpr uint8_t DATA_LATCH = A1;
 constexpr uint8_t DATA_SERIAL = A2;
 
 // Neo-Geo MVS logical bits
@@ -35,16 +36,16 @@ enum MVSBits : uint8_t {
 
 // Mapping: Logical Bit -> Arduino Digital Pin
 constexpr uint8_t mvsPins[MVS_COUNT] = {
-  4,  // UP
-  5,  // DOWN
-  6,  // LEFT
-  7,  // RIGHT
-  8,  // A
-  9,  // B
-  10, // C
-  11, // D
-  3,  // START
-  2   // SELECT / COIN
+  4,   // UP
+  5,   // DOWN
+  6,   // LEFT
+  7,   // RIGHT
+  8,   // A
+  9,   // B
+  10,  // C
+  11,  // D
+  3,   // START
+  2    // SELECT / COIN
 };
 
 constexpr uint8_t PIN_LED = LED_BUILTIN;
@@ -52,32 +53,33 @@ constexpr uint8_t PIN_LED = LED_BUILTIN;
 // SNES -> MVS bitmask table
 // SNES order: B, Y, Sel, Start, U, D, L, R, A, X, L, R
 constexpr uint16_t snesToMVS[12] = {
-  (1 << MVS_A),      // B -> A
-  (1 << MVS_C),      // Y -> C
-  (1 << MVS_SELECT), // Select
-  (1 << MVS_START),  // Start
-  (1 << MVS_UP),     // Up
-  (1 << MVS_DOWN),   // Down
-  (1 << MVS_LEFT),   // Left
-  (1 << MVS_RIGHT),  // Right
-  (1 << MVS_B),      // A -> B
-  (1 << MVS_D),      // X -> D
-  0,                 // L (Handled via Turbo logic)
-  0                  // R (Handled via Turbo logic)
+  (1 << MVS_A),       // B -> A
+  (1 << MVS_C),       // Y -> C
+  (1 << MVS_SELECT),  // Select
+  (1 << MVS_START),   // Start
+  (1 << MVS_UP),      // Up
+  (1 << MVS_DOWN),    // Down
+  (1 << MVS_LEFT),    // Left
+  (1 << MVS_RIGHT),   // Right
+  (1 << MVS_B),       // A -> B
+  (1 << MVS_D),       // X -> D
+  0,                  // L (Handled via Turbo logic)
+  0                   // R (Handled via Turbo logic)
 };
 
 void setup() {
   pinMode(DATA_CLOCK, OUTPUT);
   pinMode(DATA_LATCH, OUTPUT);
   pinMode(DATA_SERIAL, INPUT_PULLUP);
-  
+
   digitalWrite(DATA_CLOCK, HIGH);
   digitalWrite(DATA_LATCH, LOW);
 
+  // Initialize all MVS pins as INPUT (High-Impedance / Released)
   for (uint8_t i = 0; i < MVS_COUNT; i++) {
-    pinMode(mvsPins[i], INPUT); // Start in High-Z (Released)
+    pinMode(mvsPins[i], INPUT);
   }
-  
+
   pinMode(PIN_LED, OUTPUT);
 
   // Rapidly flash LED for 2 seconds at startup
@@ -100,12 +102,12 @@ uint16_t readSNES() {
   for (uint8_t i = 0; i < 16; i++) {
     digitalWrite(DATA_CLOCK, LOW);
     delayMicroseconds(6);
-    
+
     // SNES sends data as logic LOW when pressed
     if (i < 12 && digitalRead(DATA_SERIAL) == LOW) {
       buttons |= (1 << i);
     }
-    
+
     digitalWrite(DATA_CLOCK, HIGH);
     delayMicroseconds(6);
   }
@@ -125,38 +127,51 @@ uint16_t buildMVSState(uint16_t snesButtons) {
 
   // 2. Process Turbo logic for L and R
   // Toggles every 50ms (approx 10Hz)
-  bool turboPulse = (millis() / 50) % 2; 
+  bool turboPulse = (millis() / 50) % 2;
 
   if (turboPulse) {
-    if (snesButtons & (1 << 10)) mvsState |= (1 << MVS_B); // L -> Turbo B
-    if (snesButtons & (1 << 11)) mvsState |= (1 << MVS_A); // R -> Turbo A
+    if (snesButtons & (1 << 10)) mvsState |= (1 << MVS_B);  // L -> Turbo B
+    if (snesButtons & (1 << 11)) mvsState |= (1 << MVS_A);  // R -> Turbo A
   }
 
   return mvsState;
 }
 
 // Apply the state to physical pins (Sink current to GND if active)
+// MODIFIED: Uses state tracking to prevent UniBIOS jitter
 void writeMVS(uint16_t mvsState) {
-  for (uint8_t i = 0; i < MVS_COUNT; i++) {
-    uint8_t pin = mvsPins[i];
-    if (mvsState & (1 << i)) {
-      pinMode(pin, OUTPUT);
-      digitalWrite(pin, LOW);  // Active LOW
-    } else {
-      pinMode(pin, INPUT);     // High Impedance (Released)
+  static uint16_t lastMvsState = 0xFFFF;  // Track the previous state
+
+  if (mvsState != lastMvsState) {
+    for (uint8_t i = 0; i < MVS_COUNT; i++) {
+      bool isPressed = (mvsState & (1 << i));
+      bool wasPressed = (lastMvsState & (1 << i));
+
+      // Only change the pin mode if the button state changed
+      if (isPressed != wasPressed) {
+        uint8_t pin = mvsPins[i];
+        if (isPressed) {
+          // Press: Pull to GND
+          pinMode(pin, OUTPUT);
+          digitalWrite(pin, LOW);
+        } else {
+          // Release: Return to High-Impedance
+          pinMode(pin, INPUT);
+        }
+      }
     }
+    lastMvsState = mvsState;
   }
 }
 
 void loop() {
   uint16_t snesButtons = readSNES();
-  uint16_t mvsState    = buildMVSState(snesButtons);
-  
+  uint16_t mvsState = buildMVSState(snesButtons);
+
   writeMVS(mvsState);
 
   // LED logic: Lights up if any Neo-Geo input is being pulled LOW
-  // This will flash automatically when Turbo is active.
   digitalWrite(PIN_LED, (mvsState > 0) ? HIGH : LOW);
 
-  delay(5); // Small delay for stability
+  // Removed delay(5) to maximize polling frequency for cleaner signals
 }
