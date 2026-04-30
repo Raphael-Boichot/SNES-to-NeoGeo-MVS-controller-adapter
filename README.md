@@ -7,6 +7,8 @@ Button layout is based on a NeoGeo CD controller because I'm used to it, but is 
 
 ![](/SNES_to_MVS_in_hand.jpg)
 
+![](/SNES_to_MVS_in_the_wild.jpg)
+
 ## Why ?
 Using genuine NeoGeo controllers with a supergun + MVS board stays the best "genuine" experience out of owning a cabinet. But these controllers are horrendously expensive now. The next reasonable option with a supergun is to go with the NeoGeo CD controllers, which is a less bit on the pricey side. But if you're real cheap and like tinkering, the SNES controller perfectly does the job. So this converter.
 
